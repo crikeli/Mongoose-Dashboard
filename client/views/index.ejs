@@ -1,0 +1,29 @@
+<h1> Kangaroos Dashboard </h1>
+
+<a href="/kangaroo/new">Create a New Kangaroo!</a>
+
+<% for(var kangaroo in kangaroos){ %>
+
+<p>
+Name: <%= kangaroos[kangaroo].name %> 
+<br>
+Breed: <%= kangaroos[kangaroo].breed %>
+<br>
+Age: <%= kangaroos[kangaroo].age %>
+<br>
+Created on: <%= kangaroos[kangaroo].date %> 
+<br>
+<button>
+<a href="/kangaroo/<%= kangaroos[kangaroo]._id %>"> View <%= kangaroos[kangaroo].name %> </a>
+</button>
+<br>
+<button>
+<a href="/kangaroo/<%= kangaroos[kangaroo]._id %>/edit">Edit <%= kangaroos[kangaroo].name %></a>
+</button>
+<br>
+<button>
+<a href="/kangaroo/<%= kangaroos[kangaroo]._id %>/destroy">Delete <%= kangaroos[kangaroo].name %></a>
+</button>
+</p>
+
+<% } %>

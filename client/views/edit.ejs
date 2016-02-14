@@ -1,0 +1,24 @@
+
+
+</h1> Edit Your Kangaroo! </h1>
+
+
+<form action= <%= '/kangaroo/'+  kangaroo._id %> method='post'>
+
+	Name:<input type = 'text' name='name' value = " <%= kangaroo.name %> ">
+
+	<br>
+
+	Breed:<input type = 'text' name='breed' value = "<%= kangaroo.breed %>">
+
+	<br>
+
+	Age:<input type = 'number' name='age' value = "<%= kangaroo.age %>">
+
+	<br>
+
+
+	<input type="submit">
+
+
+</form>
